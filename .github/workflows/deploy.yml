@@ -20,9 +20,9 @@ jobs:
 
     # Deploy hexo blog website.
     - name: Build and Deploy
-      uses: ho-229/hexo-deploy-action@master
+      uses: u-u-z/hexo-deploy-action@master
       env:
         PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-        PUBLISH_REPOSITORY: ho-229/ho-229.github.io # The repository the action should deploy to.
+        PUBLISH_REPOSITORY: u-u-z/ho-229.github.io-test # The repository the action should deploy to.
         BRANCH: gh-page  # The branch the action should deploy to.
         PUBLISH_DIR: ./public # The folder the action should deploy.
